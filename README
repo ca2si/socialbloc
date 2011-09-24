@@ -1,0 +1,28 @@
+Social Blocks Version 1.0
+
+Installation:
+
+1.  Place this folder in the yourmoodle/course/format directory.
+2.  Add the new block regions to the current theme. (The theme will still work fine with othercourse formats.)
+    2.1   Open the config.php of the theme:(yourmoodle/theme/config.php).
+    2.2   Locate the course array: the line containing 'course' => array(
+    2.3   Within the course array, locate 'regions' => array(
+          The contents of this array may vary, but probably inclide 'side-post' and 'side-pre'.
+    2.4   Add 'top1', 'top2', 'top3', 'top4', 'bot1', 'bot2', 'bot3', 'bot4' to the array.
+          The line should look somewhat like this(may vary by theme):
+                'regions' => array('side-post', 'top1', 'top2', 'top3', 'top4', 'bot1', 'bot2', 'bot3', 'bot4'),
+    2.5   Save the file.
+
+Region Styles (defined inline :(  TODO:figure out how to get it to link to the included stylesheet)
+
+Above the forum:
+top1    A 100% width region.
+top2    A 29.33% width region with a 6% right margin, floats left.
+top3    A 29.33% width region with a 6% right margin, floats left.
+top3    A 29.33% width region, floats left.
+
+Below the forum:
+top1    A 100% width region.
+top2    A 29.33% width region with a 6% right margin, floats left.
+top3    A 29.33% width region with a 6% right margin, floats left.
+top3    A 29.33% width region, floats left.
